@@ -7,18 +7,18 @@ document.getElementById("add").onclick = function() {
     let newLength = dictionary.push(text);
 
 }
-document.getElementById("show").onclick = function() {
+document.getElementById("find").onclick = function() {
     let cond = 0;
     dictionary.forEach(function(item, index, array) {
-        var x = document.getElementById("input").value;
+        var x = document.getElementById("input2").value;
         if (x === item) {
             cond = 1;
         }
     })
     if (cond === 1) {
-        console.log("The word: ", document.getElementById("input").value, " exists in the dictionary");
+        console.log("The word: ", document.getElementById("input2").value, " exists in the dictionary");
     } else {
-        console.log("The word: ", document.getElementById("input").value, " does not exist in the dictionary");
+        console.log("The word: ", document.getElementById("input2").value, " does not exist in the dictionary");
     }
-    document.getElementById("input").value = "";
+    document.getElementById("input2").value = "";
 }
