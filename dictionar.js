@@ -5,8 +5,8 @@ document.getElementById("add").onclick = function() {
     document.getElementById("list").innerHTML += li;
     document.getElementById("input").value = "";
     let newLength = dictionary.push(text);
-
 }
+
 document.getElementById("find").onclick = function() {
     let cond = 0;
     dictionary.forEach(function(item, index, array) {
@@ -14,7 +14,7 @@ document.getElementById("find").onclick = function() {
         if (x === item) {
             cond = 1;
         }
-    })
+    });
     if (cond === 1) {
         console.log("The word: ", document.getElementById("input2").value, " exists in the dictionary");
     } else {
